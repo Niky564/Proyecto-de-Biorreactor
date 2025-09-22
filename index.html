@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biorreactor: Innovación en Biotecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .nav-link {
+            transition: all 0.3s ease-in-out;
+        }
+        .nav-link:hover {
+            transform: translateY(-2px);
+            color: #B88BFF; /* color lila en hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white text-gray-800 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-3xl font-bold text-[#B88BFF]">Biorreactor</h1>
+            <nav class="mt-4 md:mt-0">
+                <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-6 text-xl">
+                    <li><a href="#inicio" onclick="showSection('inicio')" class="text-gray-700 font-semibold nav-link hover:text-[#00BFFF]">Inicio</a></li>
+                    <li><a href="#historia" onclick="showSection('historia')" class="text-gray-700 font-semibold nav-link hover:text-[#00BFFF]">Historia</a></li>
+                    <li><a href="#aplicaciones" onclick="showSection('aplicaciones')" class="text-gray-700 font-semibold nav-link hover:text-[#00BFFF]">Aplicaciones</a></li>
+                    <li><a href="#parametros" onclick="showSection('parametros')" class="text-gray-700 font-semibold nav-link hover:text-[#00BFFF]">Parámetros</a></li>
+                    <li><a href="#galeria" onclick="showSection('galeria')" class="text-gray-700 font-semibold nav-link hover:text-[#00BFFF]">Galería</a></li>
+                    <li><a href="#conclusion" onclick="showSection('conclusion')" class="text-gray-700 font-semibold nav-link hover:text-[#00BFFF]">Conclusión</a></li>
+                    <li><a href="#recursos" onclick="showSection('recursos')" class="text-gray-700 font-semibold nav-link hover:text-[#00BFFF]">Recursos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-10">
+        <section id="inicio" class="section-content relative bg-cover bg-center bg-no-repeat bg-local p-8 sm:p-12 rounded-2xl shadow-xl mb-12 text-gray-800 flex items-center justify-center min-h-[70vh]" style="background-image: url('https://images.unsplash.com/photo-1549419137-b769f7831f47?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+            <div class="absolute inset-0 bg-[#B88BFF] opacity-70 rounded-2xl"></div>
+            <div class="relative z-10 w-full text-center text-white">
+                <h2 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Biorreactor</h2>
+                <p class="text-xl md:text-2xl leading-relaxed mb-6">
+                    La ingeniería que da vida.
+                </p>
+                <button onclick="showSection('historia')" class="bg-white text-black font-bold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105">
+                    Explorar
+                </button>
+            </div>
+        </section>
+        
+        <section id="historia" class="section-content bg-gray-200 p-8 sm:p-12 rounded-2xl shadow-xl mb-12 hidden text-gray-800">
+            <h2 class="text-3xl font-bold text-[#B88BFF] mb-6 text-center">Historia y Contexto de los Biorreactores</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-4">
+                        La idea de un biorreactor no es nueva; sus orígenes se remontan al siglo XIX con los primeros intentos de fermentación industrial. Sin embargo, el desarrollo de biorreactores modernos y a gran escala se aceleró durante el siglo XX, impulsado por la necesidad de producir antibióticos como la penicilina durante la Segunda Guerra Mundial.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Desde entonces, la tecnología ha evolucionado drásticamente. Los diseños iniciales, a menudo simples tanques, han dado paso a sistemas altamente sofisticados que controlan variables como la temperatura, el pH, el oxígeno disuelto y la agitación con gran precisión, permitiendo una producción más eficiente y controlada.
+                    </p>
+                </div>
+                <div>
+                    <img src="H.png" alt="Diagrama de la evolución de un biorreactor" class="rounded-xl shadow-lg w-full">
+                </div>
+            </div>
+        </section>
+
+        <section id="aplicaciones" class="section-content bg-white p-8 sm:p-12 rounded-2xl shadow-xl mb-12 hidden text-gray-800">
+            <h2 class="text-3xl font-bold text-[#00BFFF] mb-6 text-center">Aplicaciones en el Mundo Actual</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                        Los biorreactores son herramientas indispensables en diversas industrias, impulsando la innovación y la producción de bienes esenciales.
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Industria Farmacéutica</h3>
+                            <p class="text-gray-600">Producción de vacunas, anticuerpos monoclonales y terapias génicas.</p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Alimentos y Bebidas</h3>
+                            <p class="text-gray-600">Fermentación de yogur, cerveza, vino y la producción de enzimas para procesado de alimentos.</p>
+                        </div>
+                        <div class="bg-gray-100 p-6 rounded-xl shadow-md">
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Biocombustibles y Bioenergía</h3>
+                            <p class="text-gray-600">Cultivo de algas y microorganismos para la producción de biocombustibles sostenibles.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="parametros" class="section-content bg-gray-200 p-8 sm:p-12 rounded-2xl shadow-xl mb-12 hidden text-gray-800">
+                    <h2 class="text-3xl font-bold text-[#B88BFF] mb-6 text-center">Parámetros de Cultivo en Biorreactores</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Esta tabla lleva un control de la fermentación que esta ocurriendo en el Biorreacor, teniendo el control del habitat.
+                    </p>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full bg-white rounded-xl shadow-md">
+                            <thead class="bg-gray-700 text-white">
+                                <tr>
+                                    <th class="py-3 px-4 text-left">Tiempo (horas)</th>
+                                    <th class="py-3 px-4 text-left">Temperatura (°C)</th>
+                                    <th class="py-3 px-4 text-left">Humedad (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="parameters-table-body" class="text-gray-700">
+                            </tbody>
+                        </table>
+                        <div class="text-center mt-6">
+                            <button onclick="addRow()" class="bg-[#00BFFF] text-white font-bold py-2 px-6 rounded-full shadow-lg transition-transform hover:scale-105">
+                                Agregar Fila
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="galeria" class="section-content bg-white p-8 sm:p-12 rounded-2xl shadow-xl mb-12 hidden text-gray-800">
+                    <h2 class="text-3xl font-bold text-[#00BFFF] mb-6 text-center">Galería de Biorreactores</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-8 text-center">
+                        Descubre nuestro experimento y los elementos que possen estos tipos de proyectos.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-gray-100 p-4 rounded-xl shadow-md flex flex-col items-center">
+                            <img src="Proyect 2.jpg" alt="Imagen 1" class="rounded-lg shadow-lg mb-4 w-full h-48 object-cover">
+                            <p class="text-center text-gray-700 font-semibold">Ejemplo de Proyecto</p>
+                            <p class="text-sm text-gray-600">Prueba de Proyecto de Biorreactor 1.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-xl shadow-md flex flex-col items-center">
+                            <img src="Proyect 1.jpg" alt="Biorreactor de laboratorio de pequeña escala" class="rounded-lg shadow-lg mb-4 w-full h-48 object-cover">
+                            <p class="text-center text-gray-700 font-semibold">Ejemplo de Proyecto</p>
+                            <p class="text-sm text-gray-600">Prueba de Proyecto de Biorreactor 2.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-xl shadow-md flex flex-col items-center">
+                            <img src="Proyect.jpg" alt="Imagen 1 de los últimos retoques del proyecto" class="rounded-lg shadow-lg mb-4 w-full h-48 object-cover">
+                            <p class="text-center text-gray-700 font-semibold">Ejemplo de Proyecto</p>
+                            <p class="text-sm text-gray-600">Prueba de Proyecto de Biorreactor 3.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-xl shadow-md flex flex-col items-center">
+                            <img src="Proyect 3.jpg" alt="Biorreactor para cultivo de células animales" class="rounded-lg shadow-lg mb-4 w-full h-48 object-cover">
+                            <p class="text-center text-gray-700 font-semibold">Ejemplo de Proyecto</p>
+                            <p class="text-sm text-gray-600">Prueba de Proyecto de Biorreactor 4.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-xl shadow-md flex flex-col items-center">
+                            <img src="H.png" alt="Biorreactor de membrana con filtración" class="rounded-lg shadow-lg mb-4 w-full h-48 object-cover">
+                            <p class="text-center text-gray-700 font-semibold">Ejemplo de Proyecto</p>
+                            <p class="text-sm text-gray-600">Partes del Biorreactor.</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-xl shadow-md flex flex-col items-center">
+                            <img src="Imagen de WhatsApp 2025-09-20 a las 17.55.26_c3a35ba7.jpg" alt="Biorreactor para biorremediación" class="rounded-lg shadow-lg mb-4 w-full h-48 object-cover">
+                            <p class="text-center text-gray-700 font-semibold">Ejemplo de Proyecto</p>
+                            <p class="text-sm text-gray-600">Primera Foto del Proyecto.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="conclusion" class="section-content bg-gray-200 p-8 sm:p-12 rounded-2xl shadow-xl mb-12 hidden text-gray-800">
+                    <h2 class="text-3xl font-bold text-[#B88BFF] mb-6 text-center">Una Reflexión Final</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        En esencia, los biorreactores no son solo máquinas; son los catalizadores de un futuro biotecnológico. Permiten la manipulación de procesos biológicos a escala industrial, lo que ha transformado la medicina, la agricultura y la energía. Su continua evolución nos acercará a soluciones más sostenibles y eficientes para los desafíos globales.
+                    </p>
+                </section>
+
+                <section id="recursos" class="section-content bg-white p-8 sm:p-12 rounded-2xl shadow-xl mb-12 hidden text-gray-800">
+                    <h2 class="text-3xl font-bold text-[#00BFFF] mb-6 text-center">Recursos y Referencias</h2>
+                    <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+                        <li><a href="https://es.wikipedia.org/wiki/Biorreactor" class="text-blue-600 hover:underline">Wikipedia - Biorreactor</a></li>
+                        <li><a href="https://www.nature.com" class="text-blue-600 hover:underline">Revista Nature - Biotecnología</a></li>
+                        <li><a href="https://www.bioprocessintl.com/" class="text-blue-600 hover:underline">BioProcess International</a></li>
+                    </ul>
+                </section>
+        
+    </main>
+
+    <footer class="bg-white text-gray-800 p-6 rounded-t-2xl shadow-inner">
+        <div class="container mx-auto text-center text-sm">
+            <p>Alumno: Mía Nikole Meoño Hernández</p>
+            <p>Feria Científica</p>
+            <p>Año: 2025</p>
+        </div>
+    </footer>
+
+    <script>
+        // Funcionalidad para mostrar las secciones
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section-content');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style.display = 'block';
+            }
+        }
+
+        // Funcionalidad para la tabla
+        let tableData = [];
+        const tableBody = document.getElementById('parameters-table-body');
+
+        // Función para guardar los datos en localStorage
+        function saveTableData() {
+            localStorage.setItem('biorreactorTableData', JSON.stringify(tableData));
+        }
+
+        // Función para cargar los datos desde localStorage
+        function loadTableData() {
+            const savedData = localStorage.getItem('biorreactorTableData');
+            if (savedData) {
+                tableData = JSON.parse(savedData);
+            } else {
+                // Datos por defecto si no hay nada guardado
+                tableData = [
+                    { time: '0', temp: '25', humidity: '60' },
+                    { time: '1', temp: '26', humidity: '62' },
+                    { time: '2', temp: '26.5', humidity: '65' }
+                ];
+            }
+        }
+
+        // Función para renderizar la tabla
+        function renderTable() {
+            tableBody.innerHTML = '';
+            tableData.forEach((row, index) => {
+                const newRow = document.createElement('tr');
+                newRow.classList.add('border-b', 'hover:bg-gray-100', 'transition-colors');
+                newRow.innerHTML = `
+                    <td class="py-3 px-4" contenteditable="true" onblur="updateCell(${index}, 'time', this.innerText)">${row.time}</td>
+                    <td class="py-3 px-4" contenteditable="true" onblur="updateCell(${index}, 'temp', this.innerText)">${row.temp}</td>
+                    <td class="py-3 px-4" contenteditable="true" onblur="updateCell(${index}, 'humidity', this.innerText)">${row.humidity}</td>
+                `;
+                tableBody.appendChild(newRow);
+            });
+        }
+
+        // Función para añadir una nueva fila y guardar
+        function addRow() {
+            tableData.push({ time: '', temp: '', humidity: '' });
+            renderTable();
+            saveTableData();
+        }
+
+        // Función para actualizar una celda y guardar
+        function updateCell(rowIndex, key, value) {
+            if (tableData[rowIndex]) {
+                tableData[rowIndex][key] = value.trim();
+                saveTableData();
+            }
+        }
+
+        // Inicializar la primera sección visible y cargar/renderizar la tabla
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection('inicio');
+            loadTableData();
+            renderTable();
+        });
+    </script>
+</body>
+</html>
